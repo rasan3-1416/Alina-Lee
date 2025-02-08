@@ -1,10 +1,20 @@
 import React from "react";
+// Import Components
+import Header from "./components/Header";
+import AnimRoutes from "./components/AnimRoutes";
+// Import Browser Router
+import { BrowserRouter } from "react-router-dom";
+// Import Framer Motion
+import { motion } from "motion/react";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-red-500 text-[3.5rem]">Hello World</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        <Header />
+        <AnimRoutes />
+      </BrowserRouter>
+    </>
   );
 };
 
