@@ -1,7 +1,7 @@
 import React from "react";
 
 const Home = () => {
-  return <div>Contact</div>;
+  return <section className="section bg-blue-300">Home</section>;
 };
 
 export default Home;
