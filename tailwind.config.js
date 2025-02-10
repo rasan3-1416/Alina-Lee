@@ -10,10 +10,13 @@ export default {
       sm: "640px",
       md: "768px",
       lg: "1024px",
-      xl: "1192px",
+      xl: "1282px",
     },
     container: {
       center: true,
+      padding: {
+        lg: "2rem",
+      },
     },
     extend: {
       colors: {
