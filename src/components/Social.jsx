@@ -13,27 +13,27 @@ const Social = () => {
       <ul className="flex gap-x-4">
         <li>
           <a href="https://www.facebook.com" target="_blank">
-            <ImFacebook />
+            <ImFacebook size={20} />
           </a>
         </li>
         <li>
           <a href="https://www.twitter.com" target="_blank">
-            <ImTwitter />
+            <ImTwitter size={20} />
           </a>
         </li>
         <li>
           <a href="https://www.pinterest.com" target="_blank">
-            <ImPinterest />
+            <ImPinterest size={20} />
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com" target="_blank">
-            <ImInstagram />
+            <ImInstagram size={20} />
           </a>
         </li>
         <li>
           <a href="https://www.youtube.com" target="_blank">
-            <ImYoutube />
+            <ImYoutube size={20} />
           </a>
         </li>
       </ul>
