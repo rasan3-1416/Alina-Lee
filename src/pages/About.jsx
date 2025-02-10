@@ -1,6 +1,8 @@
 import React from "react";
 import WomanImage from "../assets/img/about/woman.png";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
+import { transitionOne } from "../transitions";
 
 const About = () => {
   return (
@@ -29,10 +31,22 @@ const About = () => {
           </div>
         </div>
       </section> */}
-      <section className="section">
+      <motion.section
+        initial={{ opacity: 0, y: "-100%" }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: "-100%" }}
+        transition={transitionOne}
+        className="section"
+      >
         <div className="container h-full">
           <div className="flex h-full flex-col items-center justify-center gap-y-12 lg:flex-row lg:gap-x-16 lg:pb-8">
-            <div className="flex flex-col items-center text-center lg:order-2 lg:items-start lg:text-start">
+            <motion.div
+              initial={{ opacity: 0, y: "-80%" }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: "-80%" }}
+              transition={transitionOne}
+              className="flex flex-col items-center text-center lg:order-2 lg:items-start lg:text-start"
+            >
               <h1 className="h1">about me</h1>
               <p className="mb-12 max-w-[500px] px-6 md:max-w-[600px] lg:max-w-[500px] lg:px-0">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
@@ -46,17 +60,17 @@ const About = () => {
               <Link to={"/portfolio"} className="btn">
                 View my work
               </Link>
-            </div>
+            </motion.div>
             <div className="order-1 flex h-full items-center justify-center overflow-hidden lg:w-[500px]">
               <img
-                className="w-[480px] lg:scale-[0.8] xl:scale-90"
+                className="lg:w-[480px] lg:scale-[0.8] xl:scale-90"
                 src={WomanImage}
                 alt="Woman Image"
               />
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };
