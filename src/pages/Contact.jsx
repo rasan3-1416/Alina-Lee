@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import WomanImage from "../assets/img/contact/woman.png";
 import { motion } from "motion/react";
 import { transitionOne } from "../transitions";
+import { CursorContext } from "../context/CursorContext";
 
 const Contact = () => {
   const [isDekstop, setIsDekstop] = useState(window.innerWidth > 1024);
+
+  const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
 
   useEffect(() => {
     const handleResize = () => setIsDekstop(window.innerWidth > 1024);
@@ -16,6 +19,7 @@ const Contact = () => {
     hidden: isDekstop ? { opacity: 0, y: "100%" } : { opacity: 0, y: yValue },
     visible: { opacity: 1, y: 0 },
   });
+
   return (
     <motion.section
       initial="hidden"
@@ -38,6 +42,8 @@ const Contact = () => {
             animate="visible"
             variants={variants("-80%")}
             transition={transitionOne}
+            onMouseEnter={mouseEnterHandler}
+            onMouseLeave={mouseLeaveHandler}
             className="px-4 lg:flex-1"
           >
             <h1 className="h1">contact me</h1>
@@ -67,7 +73,11 @@ const Contact = () => {
               />
             </form>
           </motion.div>
-          <div className="relative h-screen lg:flex-1">
+          <div
+            onMouseEnter={mouseEnterHandler}
+            onMouseLeave={mouseLeaveHandler}
+            className="relative lg:h-screen lg:flex-1"
+          >
             <img src={WomanImage} alt="" />
           </div>
         </div>
