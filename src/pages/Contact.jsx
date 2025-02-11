@@ -35,7 +35,7 @@ const Contact = () => {
               />
             </form>
           </div>
-          <div className="h-screen lg:flex-1">
+          <div className="relative h-screen lg:flex-1">
             <img src={WomanImage} alt="" />
           </div>
         </div>
