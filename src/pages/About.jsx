@@ -45,10 +45,10 @@ const About = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: "-80%" }}
               transition={transitionOne}
-              className="flex flex-col items-center text-center lg:order-2 lg:items-start lg:text-start"
+              className="text-center lg:order-2 lg:text-start"
             >
               <h1 className="h1">about me</h1>
-              <p className="mb-12 max-w-[500px] px-6 md:max-w-[600px] lg:max-w-[500px] lg:px-0">
+              <p className="mx-auto mb-12 max-w-[500px] px-6 md:max-w-[600px] lg:mx-0 lg:max-w-[500px] lg:px-0">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
                 <b>Dolore recusandae</b> aliquid vel ea vitae dolor eius commodi
                 ipsum dolorum.
@@ -57,7 +57,7 @@ const About = () => {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
                 quibusdam rerum et natus?
               </p>
-              <Link to={"/portfolio"} className="btn">
+              <Link to={"/portfolio"} className="btn mx-auto lg:mx-0">
                 View my work
               </Link>
             </motion.div>
