@@ -40,12 +40,7 @@ const Home = () => {
               transition={transitionOne}
               className="relative h-full lg:-right-40 lg:-top-24"
             >
-              <img
-                // whileHover={{ scale: 1.1 }}
-                // transition={transitionOne}
-                src={WomanImage}
-                alt="Woman Image"
-              />
+              <img src={WomanImage} alt="Woman Image" />
             </motion.div>
           </div>
         </div>
