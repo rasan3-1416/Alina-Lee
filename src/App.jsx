@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 // Import Components
-import Header from "./Components/Header";
+import Header from "./components/Header";
 import AnimRoutes from "./components/AnimRoutes";
 // Import Browser Router
 import { BrowserRouter } from "react-router-dom";
