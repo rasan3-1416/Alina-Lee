@@ -5,9 +5,9 @@ const Contact = () => {
   return (
     <section className="section">
       <div className="container">
-        <div className="flex flex-col items-center justify-center gap-x-8 pt-36 text-center lg:flex-row lg:text-left">
-          <div className="absolute bottom-0 left-0 right-0 top-72 -z-10 hidden bg-[#eef7f9] lg:flex"></div>
-          <div className="px-4 lg:flex-1 lg:pt-32">
+        <div className="flex flex-col items-center justify-center gap-x-8 text-center lg:flex-row lg:pb-8 lg:text-left">
+          <div className="absolute bottom-0 left-0 right-0 top-40 -z-10 hidden bg-[#eef7f9] lg:flex"></div>
+          <div className="px-4 lg:flex-1">
             <h1 className="h1">contact me</h1>
             <p className="mb-12">I would love to get suggestion from you.</p>
             <form action="" className="flex flex-col gap-y-4">
@@ -35,7 +35,7 @@ const Contact = () => {
               />
             </form>
           </div>
-          <div className="lg:flex-1">
+          <div className="h-screen lg:flex-1">
             <img src={WomanImage} alt="" />
           </div>
         </div>
