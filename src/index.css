@@ -5,6 +5,7 @@
 @layer base {
   body {
     @apply overflow-x-hidden bg-white font-secondary text-primary;
+    scrollbar-width: 0;
   }
   body::-webkit-scrollbar {
     @apply w-[0px];

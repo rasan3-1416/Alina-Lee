@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import WomanImage from "../assets/img/home/woman.png";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
